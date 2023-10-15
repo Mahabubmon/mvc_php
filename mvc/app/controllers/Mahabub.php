@@ -1,10 +1,10 @@
 <?php 
 
-    class Mahabub{
+    class Mahabub extends DController{
 
         function __construct(){
 
-            echo "IT's Mahabub from controller";
+            parent::__construct();
             
         }
     }
