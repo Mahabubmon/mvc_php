@@ -2,10 +2,15 @@
 
     class Mahabub extends DController{
 
-        function __construct(){
+        public function __construct(){
 
-            parent::__construct();
+            // parent::__construct();
             
+        }
+
+        public function Rahman($param){
+
+            echo "Rahman from method $param";
         }
     }
 
