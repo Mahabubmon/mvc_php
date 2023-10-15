@@ -10,6 +10,10 @@ $url = explode("/",$url);
 echo $controller = $url[0]."<br/>"; 
 echo  $method = $url[1]."<br/>";
 echo  $param = $url[2]."<br/>";
+
+include 'app/controllers/Mahabub.php';
+
+$mahabub = new Mahabub();
     
 
 
