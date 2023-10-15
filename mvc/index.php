@@ -1,10 +1,16 @@
 <?php include "inc/header.php"; ?>
 
 <?php 
+include_once "system/libs/Main.php";
 
-    include_once " system/libs/Main.php";
-    $main = new Main();
+$url = $_GET['url'];
+$url = explode("/",$url);
+
+echo "<pre>";
+print_r($url);
+echo "</pre>";
     
+
 
 ?>
 
