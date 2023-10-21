@@ -4,33 +4,28 @@
 include_once "system/libs/Main.php";
 include_once "system/libs/DController.php";
 
-$url = isset($_GET['url']) ? $_GET['url'] : NULL;
+$url = isset($_GET['url']) ? $_GET['url']: NULL;
 
 $url = rtrim($url,'/');
 $url = explode("/",$url);
 
 
 if($url[0]){
-    include 'app/controllers/'.$url[0].'.php';
+include include 'app/controllers/'.$url[0].'.php';
+$ctlr = new $url[0]();
 
-    $ctlr = new $url[0]();
-    if($url[2]){
-        $ctlr->$url[1]($url[2]);
-    }else{
-        if($url[1]){
-            $ctlr->$url[1]();   
-
-        }else{
-            
-        }
-
-    }
-    
-}else{
+if($url[2]){
+    $ctlr->$url[1]($url[2]);
 
 }
+}else{
+    
+}
 
-$ctlr->$url[1]($url[2]);
+
+
+
+
 
 ?>
 

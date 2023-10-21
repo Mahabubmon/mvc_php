@@ -8,9 +8,9 @@
             
         }
 
-        public function Rahman($param){
+        public function Rahman() {
 
-            echo "Rahman from method $param";
+            echo "Rahman from method ";
         }
     }
 
