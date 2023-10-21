@@ -3,6 +3,7 @@
 <?php 
 include_once "system/libs/Main.php";
 include_once "system/libs/DController.php";
+include_once "system/libs/load.php";
 
 $url = isset($_GET['url']) ? $_GET['url']: NULL;
 

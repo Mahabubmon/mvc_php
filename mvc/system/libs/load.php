@@ -5,7 +5,7 @@
 
         }
         public function view($fileName){
-          include 'app/views'.$fileName.'.php'; 
+          include 'app/views/'.$fileName.'.php'; 
         }
     }
 ?>

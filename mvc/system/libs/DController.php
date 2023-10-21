@@ -1,8 +1,10 @@
 <?php 
         class DController{
 
+            protected $load = array();
+
             public function __construct(){
-                echo "From Parent Controller";
+              $this->load = new Load();
             }
         }
 
