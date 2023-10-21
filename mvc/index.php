@@ -18,7 +18,7 @@ if(isset($url[0])){
 include include 'app/controllers/'.$url[0].'.php';
 $ctlr = new $url[0]();
 
-if((isset$url[2])){
+if(isset($url[2])){
     $ctlr->$url[1]($url[2]);
 }else{
     if(isset($url[1])){
@@ -29,6 +29,8 @@ if((isset$url[2])){
 
 }
 }else{
+    include include 'app/controllers/index.php';
+    $ctlr = new Index();
 
 }
 
