@@ -31,6 +31,7 @@ if(isset($url[2])){
 }else{
     include 'app/controllers/index.php';
     $ctlr = new Index();
+    $ctlr->home();
 
 }
 

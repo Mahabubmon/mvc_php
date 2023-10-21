@@ -6,6 +6,10 @@
 
         }
 
+        public function home(){
+            echo "Home content from index file";
+        }
+
     }
 
 ?>
