@@ -14,14 +14,14 @@ if($url != NULL){
     unset($url);
 }
 
-if($url[0]){
+if(isset($url[0])){
 include include 'app/controllers/'.$url[0].'.php';
 $ctlr = new $url[0]();
 
-if($url[2]){
+if((isset$url[2])){
     $ctlr->$url[1]($url[2]);
 }else{
-    if($url[1]){
+    if(isset($url[1])){
         $ctlr->$url[1]($url[2]);  
     }else{
 
