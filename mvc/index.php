@@ -29,7 +29,7 @@ if(isset($url[2])){
 
 }
 }else{
-    include include 'app/controllers/index.php';
+    include 'app/controllers/index.php';
     $ctlr = new Index();
 
 }
