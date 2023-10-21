@@ -1,13 +1,15 @@
 <?php 
 
     class Index extends DController{
+        $load;
+
         function __construct(){
             parent::__construct();
 
         }
 
         public function home(){
-            echo "Home content from index file";
+          $this->load->view("home");
         }
 
     }
