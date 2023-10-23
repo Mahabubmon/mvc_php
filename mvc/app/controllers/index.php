@@ -10,7 +10,8 @@
         }
 
         public function home(){
-          $this->load->view("home");
+        //   $this->load->view("home");
+        $this->load->model();
         }
 
     }

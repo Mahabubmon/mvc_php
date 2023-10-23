@@ -7,5 +7,9 @@
         public function view($fileName){
           include 'app/views/'.$fileName.'.php'; 
         }
+
+        public function model(){
+          
+        }
     }
 ?>

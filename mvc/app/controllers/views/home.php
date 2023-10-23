@@ -39,7 +39,7 @@ input[type="submit"]{cursor: pointer}
 	
   </header>
 <div class="content">
-    ............
+  <h1>Mahabubur Rahman Home viwe</h1>
 
     </div>
 
