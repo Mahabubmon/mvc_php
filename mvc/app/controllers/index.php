@@ -10,14 +10,16 @@
         }
 
         public function home(){
-        //   $this->load->view("home");
+          $this->load->view("home");
 
        
         }
 
         public function category(){
+         $data = array();   
         $catModel = $this->load->model("CatModel");
-        $catModel->catList();
+         $data['cat']=$catModel->catList();
+         $this->load->view("category");
 
         }
 
