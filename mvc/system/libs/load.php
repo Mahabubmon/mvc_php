@@ -8,8 +8,9 @@
           include 'app/views/'.$fileName.'.php'; 
         }
 
-        public function model(){
-          
+        public function model($modelName){
+          include 'app/models/'.$fileName.'.php'; 
+
         }
     }
 ?>

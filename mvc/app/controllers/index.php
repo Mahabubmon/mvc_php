@@ -11,7 +11,14 @@
 
         public function home(){
         //   $this->load->view("home");
-        $this->load->model();
+
+       
+        }
+
+        public function category(){
+        $catModel = $this->load->model("CatModel");
+        $catModel->catList();
+
         }
 
     }

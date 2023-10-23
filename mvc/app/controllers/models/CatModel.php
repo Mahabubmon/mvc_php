@@ -3,7 +3,7 @@
     class CatModel{
 
         function __construct(){
-            echo "Category model"
+            echo "Category model";
         }
     }
 
