@@ -5,7 +5,13 @@ use App\Mvc\Controller;
 use App\Mvc\User;
 
 class UserController extends Controller{
-    
+    public function index(){
+        $user = [
+            new User('rahul','rahul@test.com'),
+            new User('arif','arif@test.com')
+        ];
+    }
+
 }
 
 
