@@ -1,7 +1,7 @@
 <?php
 
-use App\Mvc\Router;
-use App\Mvc\Controllers\UserController;
+use App\Router;
+use App\Controllers\UserController;
 
 $router = new Router();
 
