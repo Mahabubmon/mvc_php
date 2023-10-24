@@ -10,6 +10,7 @@ class UserController extends Controller{
             new User('rahul','rahul@test.com'),
             new User('arif','arif@test.com')
         ];
+        $this->render('user/index',['user'=> $user]);
     }
 
 }
